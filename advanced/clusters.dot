@@ -1,0 +1,21 @@
+digraph cluster{
+
+    subgraph cluster_0 {
+        label="Process A";
+        node[style=filled, color="lightgray"];
+        a0 -> a1 -> a2 -> a3;
+    }
+
+    subgraph cluster_1 {
+        label="Process B";
+        b0 -> b1 -> b2;
+    }
+
+    b1 -> a3;
+    start -> a0;
+    start -> b0;
+    a3 -> end;
+    b2 -> end;
+    start [shape=Mdiamond];
+    end [shape=Msquare];
+}

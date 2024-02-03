@@ -1,0 +1,6 @@
+digraph {
+  rankdir=LR;
+  
+  hello [ label = "Hello" ];
+  hello -> world [ color="orange", penwidth=3.0 ];
+}

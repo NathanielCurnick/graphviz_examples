@@ -1,0 +1,6 @@
+digraph {
+  node [ shape=square ];
+  edge [ style=dashed ];
+  
+  see -> think -> do;
+}
